@@ -1,0 +1,11 @@
+Curso Git
+Comandos
+
+git -- version: informa a versão instalada do git
+
+git init: iniciar um repositório a partir da pasta selecionada onde está o arquivo em questão. Todas as alterações feitas no arquivo serão detectadas pelo Git.
+
+git status: mostra informações sobre o estado do arquivo que está sendo monitorado pelo git.
+
+
+
