@@ -1,6 +1,9 @@
 Curso Git
 Comandos
 
+cd ..: subir um diretório
+mkdir: criar uma nova pasta
+
 git -- version: informa a versão instalada do git
 
 git init: iniciar um repositório a partir da pasta selecionada onde está o arquivo em questão. Todas as alterações feitas no arquivo serão detectadas pelo Git.
@@ -11,4 +14,38 @@ Commit: ponto de salvamento, chekpoint
 git commit -m "Criando arquivo Curso Git Comandos para estudo": colocar uma mensagem de commit.
 
 git log: Mostrar uma lista de commits, histórico de alteraçoes, cada mensagem de commit
+git log --oneline
+git log -p
+devhints.io/git-log
 
+git config: visualizar e modificar as configurações para cada projeto, utilizando o parâmetro --local, ou --global para a máquina como um todo.
+
+git config --local user.name "": grava o nome do autor
+
+git ignore: informar para que o git não monitore um determinado arquivo
+
+Quando commitar? Quando alguma alteração significativa no código for efetuada. Nunca commitar algo que não está funcionando.
+
+Como trabalhar em equipe, com um repositório remoto em um servidor.
+
+cd ..: subir um diretório
+mkdir: criar uma nova pasta
+pwd: comando para ver em qual caminho você está atualmente
+mkdir servidor/ (servidor que só vai controlar as alterações, sem edição de arquivos,,, só vai servir par armazenar as alterações, --bare. Esse parâmetro indica que esse repositório é puro, que só cantêm as alteraçõe dos arquivos, não uma cópia física de cada um dos arquivos de forma que não se consiga acessar facilmente.
+git init --bare:
+
+git remote: listar todos os repositórios remotos que o meu repositório local conhece.
+git remot -v: mostra o endereço do local, e também que ele vai enviar dados (fetch) e buscar dados (push) por esse caminho.
+
+fazer com que o meu repositório conheça o repositório remoto, o endereço, para que futuramente consiga enviar os dados para ele. 
+
+git remote add nome endereço: adicional um repositório remoto
+( git remote add local /c/Users/franc/servidor)
+O endereço pode ser qualquer coisa, endereço de uma pasta no computador local, na red, uma url de um servidor pela internet, ou seja, qualquer endereço válido para um repositório git.
+
+git clone /endereço/ nomeDaNovaPasta: clonar: trazer todos os dados de um repositório remoto para o repositório local
+
+Como enviar e buscar dados para/de um repositório
+
+A partir da pasta do seu repositório git
+git push local master (para/de)
