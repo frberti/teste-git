@@ -7,5 +7,6 @@ git init: iniciar um repositório a partir da pasta selecionada onde está o arq
 
 git status: mostra informações sobre o estado do arquivo que está sendo monitorado pelo git.
 
-
+Commit: ponto de salvamento, chekpoint
+git commit -m "Criando arquivo Curso Git Comandos para estudo": colocar uma mensagem de commit 
 
