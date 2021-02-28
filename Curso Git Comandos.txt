@@ -48,4 +48,5 @@ git clone /endereço/ nomeDaNovaPasta: clonar: trazer todos os dados de um repos
 Como enviar e buscar dados para/de um repositório
 
 A partir da pasta do seu repositório git
-git push local master (para/de)
+git push origin master (para/de)
+git pull origin master (para/de)
